@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+html, body, ul {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.app {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+hr {
+  margin-bottom: 3rem;
+}
+
+.player-generator,
+.rookie-generator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 2rem);
+  gap: 2rem;
+}
+@media (min-width: 500px) {
+  .player-generator,
+.rookie-generator {
+    grid-template-columns: 1fr 70px 70px 70px 70px;
+  }
+}
+.player-generator .player-group,
+.player-generator .rookie-group,
+.rookie-generator .player-group,
+.rookie-generator .rookie-group {
+  justify-self: center;
+}
+.player-generator .player-group .label,
+.player-generator .rookie-group .label,
+.rookie-generator .player-group .label,
+.rookie-generator .rookie-group .label {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.player-generator .player-skill,
+.player-generator .player-age,
+.player-generator .player-salary,
+.player-generator .player-stars,
+.player-generator .rookie-skill,
+.player-generator .rookie-age,
+.player-generator .rookie-salary,
+.player-generator .rookie-stars,
+.rookie-generator .player-skill,
+.rookie-generator .player-age,
+.rookie-generator .player-salary,
+.rookie-generator .player-stars,
+.rookie-generator .rookie-skill,
+.rookie-generator .rookie-age,
+.rookie-generator .rookie-salary,
+.rookie-generator .rookie-stars {
+  text-align: center;
+}
+.player-generator .player-name,
+.player-generator .rookie-name,
+.rookie-generator .player-name,
+.rookie-generator .rookie-name {
+  justify-self: start;
+  grid-column: 1/6;
+}
+@media (min-width: 550px) {
+  .player-generator .player-name,
+.player-generator .rookie-name,
+.rookie-generator .player-name,
+.rookie-generator .rookie-name {
+    grid-column: 1;
+  }
+}
+
+.player-generator-button,
+.rookie-generator-button {
+  display: grid;
+  place-items: center;
+  margin: 3rem 0;
+}
+.player-generator-button button,
+.rookie-generator-button button {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+}
+.player-generator-button button:hover,
+.rookie-generator-button button:hover {
+  cursor: pointer;
+}
