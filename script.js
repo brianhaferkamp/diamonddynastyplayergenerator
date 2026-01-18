@@ -57,7 +57,7 @@ function die3() {
 
 function getPlayerName() {
   $.ajax({
-    url: "https://randomuser.me/api/?inc=name&noinfo&gender=male&nat=us,gb,mx",
+    url: "https://randomuser.me/api/?inc=name&noinfo&gender=male&nat=us,gb,mx,au,ca,ie,nz",
     dataType: "json",
     success: function (data) {
       var person = data.results;
@@ -73,7 +73,7 @@ function getPlayerName() {
 
 function getRookieName() {
   $.ajax({
-    url: "https://randomuser.me/api/?inc=name&noinfo&gender=male&nat=us,gb,mx",
+    url: "https://randomuser.me/api/?inc=name&noinfo&gender=male&nat=us,gb,mx,au,ca,ie,nz",
     dataType: "json",
     success: function (data) {
       var person = data.results;
